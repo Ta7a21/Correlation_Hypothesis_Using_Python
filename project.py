@@ -158,17 +158,17 @@ DEG_ind_names_un = diffrentially_genes_ind_Unchanged[[
     'Gene_name', 'p_values', 'p_values_fdr']]
 
 
-print(len(DEG_rel_names_un))
-print(len(DEG_ind_names_un))
-print(len(DEG_rel_names_ch))
-print(len(DEG_ind_names_ch))
+# print(len(DEG_rel_names_un))
+# print(len(DEG_ind_names_un))
+# print(len(DEG_rel_names_ch))
+# print(len(DEG_ind_names_ch))
 
 
-# print('Common genes - Paired')
-# print(tabulate(DEG_rel_names_un.iloc[:10], headers='keys', tablefmt='psql'))
-# print('Common genes - Unpaired')
-# print(tabulate(DEG_ind_names_un.iloc[:10], headers='keys', tablefmt='psql'))
-# print('Distinct genes - Paired')
-# print(tabulate(DEG_rel_names_ch.iloc[:10], headers='keys', tablefmt='psql'))
-# print('Distinct genes - Unpaired')
-# print(tabulate(DEG_ind_names_ch.iloc[:10], headers='keys', tablefmt='psql'))
+print('Common genes - Paired')
+print(tabulate(DEG_rel_names_un.iloc[:10], headers='keys', tablefmt='psql'))
+print('Common genes - Independent')
+print(tabulate(DEG_ind_names_un.iloc[:10], headers='keys', tablefmt='psql'))
+print('Distinct genes - Paired')
+print(tabulate(DEG_rel_names_ch.iloc[:10], headers='keys', tablefmt='psql'))
+print('Distinct genes - Independet')
+print(tabulate(DEG_ind_names_ch.iloc[:10], headers='keys', tablefmt='psql'))
