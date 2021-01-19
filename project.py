@@ -13,6 +13,7 @@ cancer = pd.read_csv('data/lusc-rsem-fpkm-tcga-t_paired.txt', sep='\t')
 
 pd.options.display.max_columns = None
 
+# Shape is a method to get [rows,columns]
 noOfRows = healthy.shape[0]
 noOfColumns = healthy.shape[1]
 
